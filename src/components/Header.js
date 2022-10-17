@@ -66,7 +66,7 @@ const Header = () => {
               src={process.env.PUBLIC_URL + "/images/Union.png"}
             />
             <Image
-              sx={{ width: "115px", height: "30px", marginTop: "6px" }}
+              sx={{ width: {lg:"115px",md:"115px",xs:"70px"}, height: "30px", marginTop: "6px" }}
               src={process.env.PUBLIC_URL + "/images/lendsqr.png"}
             />
             <InputBase
@@ -104,8 +104,9 @@ const Header = () => {
               textAlign: "center",
               justifyContent: "space-between",
               color: "black",
-              gap: 5,
-              marginTop: "30px",
+              gap: 3,
+              marginTop:'15px',
+              marginRight:{lg:'17px',xs:'40px'},
             }}
           >
             <Typography
@@ -121,7 +122,7 @@ const Header = () => {
             <NotificationsOutlined
               sx={{ color: "#213F7D", height: "32.74px", width: "19.5px" }}
             />
-            <Box sx={{ gap: 1, display: "flex", alignItems: "center" }}>
+            <Box sx={{display: "flex", alignItems: "center" }}>
               <Avatar src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
               <Typography sx={{ marginTop: "8px", cursor: "pointer" }}>
                 Adedeji
