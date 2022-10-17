@@ -11,7 +11,7 @@ import React from "react";
 const Image = styled("img")({});
 const Login = () => {
   return (
-    <Box sx={{ margin: "107px" }}>
+    <Box sx={{ margin: "50px" }}>
       <Stack
         direction={{ xs: "column", sm: "column", md: "row", lg: "row" }}
         spacing={2}
