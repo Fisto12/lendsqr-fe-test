@@ -55,7 +55,7 @@ const Login = () => {
             }}
           >
             <Typography
-              align="left"
+              align={xs:'center',lg:'left'}
               sx={{
                 fontFamily: "Avenir Next",
                 fontWeight: "bold",
