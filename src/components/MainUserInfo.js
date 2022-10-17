@@ -7,7 +7,7 @@ const MainUserInfo = ({ usersData }) => {
       sx={{
         height: "auto",
         margin: "40px",
-        width: 'auto',
+        width: {xs:"70%",lg:'auto},
       }}
     >
       <Box
