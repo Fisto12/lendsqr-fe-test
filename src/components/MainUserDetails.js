@@ -72,7 +72,7 @@ const MainUserDetails = () => {
       <Box>
         <Card
           sx={{
-            width: '100%',
+            width: '250px',
             margin: "40px",
             height: "210px",
             position: "relative",
