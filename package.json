@@ -1,5 +1,9 @@
 {
   "name": "lendsqr-fe-test",
+    "engines":{
+      "node":"18.4.0",
+      "npm":"8.12.1"
+   },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
