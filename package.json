@@ -27,7 +27,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --max_old_space_size=4096",
+    "start": "node --max_old_space_size=1024 node_modules/.bin/react-scripts start",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,css,css,ts,tsx}\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
