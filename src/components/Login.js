@@ -61,7 +61,7 @@ const Login = () => {
                 fontWeight: "bold",
                 fontSize: "40px",
                 lineHeight: "100%",
-                color: "red",
+                color: "#213F7D",
                 marginBottom: "10px",
               }}
             >
