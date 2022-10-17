@@ -65,10 +65,12 @@ const Header = () => {
               sx={{ width: "24.75px", height: "25px", marginRight: "6px" }}
               src={process.env.PUBLIC_URL + "/images/Union.png"}
             />
-            <Image
+            <Link to="/">
+              <Image
               sx={{ width: {lg:"115px",md:"115px",xs:"70px"}, height: "30px", marginTop: "6px" }}
               src={process.env.PUBLIC_URL + "/images/lendsqr.png"}
             />
+            </Link>
             <InputBase
               sx={{
                 borderRadius: "8px",
