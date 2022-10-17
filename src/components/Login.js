@@ -29,7 +29,7 @@ const Login = () => {
           </Box>
           <Box sx={{ display: "flex" }}>
             <Image
-              sx={{ width: "100%", height: "407px", objectFit: "cover" }}
+              sx={{ width: {lg:"100%",xs:'100%'}, height: "407px", objectFit: "cover" }}
               src={process.env.PUBLIC_URL + "/images/pablo-sign-in 1.svg"}
             />
           </Box>
@@ -40,7 +40,7 @@ const Login = () => {
             flexDirection: "column",
             flex: 2,
             position: "relative",
-            justifiyContent: "center",
+            justifyContent: "center",
             alignItems: "center",
             backgroundColor: "white",
           }}
@@ -49,13 +49,13 @@ const Login = () => {
             sx={{
               position: "absolute",
               top: "70px",
-              height: "360px",
+              height: "auto",
               padding: "20px",
               background: "white",
             }}
           >
-            <Typography
-              align={xs:'center',lg:'left'}
+            <Box sx={{justifyContent:'center',textAlign:'center'}}>
+              <Typography
               sx={{
                 fontFamily: "Avenir Next",
                 fontWeight: "bold",
@@ -63,24 +63,24 @@ const Login = () => {
                 lineHeight: "100%",
                 color: "#213F7D",
                 marginBottom: "10px",
+                textAlign:{xs:'center',md:'left',lg:'left',sm:'center'}
               }}
             >
               Welcome!
             </Typography>
             <Typography
-              align="left"
               gutterBottom
               sx={{
                 font: "Avenir Next",
                 fontWeight: 400,
                 fontSize: "20px",
                 color: "#545F7D",
+                textAlign:{xs:'center',md:'left',lg:'left',sm:'center'}
               }}
             >
               Enter details to login
             </Typography>
             <InputBase
-              fullWidth
               placeholder="email"
               sx={{
                 border: "1px solid black",
@@ -89,11 +89,10 @@ const Login = () => {
                 height: "50px",
                 marginBottom: "10px",
                 marginTop: "20px",
-                width: "447px",
+                width: {lg:"447px",xs:"250px"},
               }}
             />
             <InputBase
-              fullWidth
               type="password"
               placeholder="password"
               sx={{
@@ -102,7 +101,7 @@ const Login = () => {
                 borderRadius: "5px",
                 padding: "5px",
                 height: "50px",
-                width: "447px",
+                width: {lg:"447px",xs:"250px"},
               }}
               endAdornment={
                 <div style={{ color: "blue", cursor: "pointer" }}>show</div>
@@ -111,7 +110,6 @@ const Login = () => {
             <Typography
               sx={{
                 color: "#39CDCC",
-                width: "147px",
                 height: "11px",
                 marginTop: "10px",
               }}
@@ -120,12 +118,12 @@ const Login = () => {
             </Typography>
             <Button
               href="/dashboard"
-              fullWidth
               variant="contained"
-              sx={{ marginTop: "20px", background: "#39CDCC", height: "48px" }}
+              sx={{ marginTop: "20px", background: "#39CDCC", height: "48px" , width: {lg:"447px",xs:"250px"}}}
             >
               Login
             </Button>
+            </Box>
           </Card>
         </Box>
       </Stack>
@@ -134,3 +132,4 @@ const Login = () => {
 };
 
 export default Login;
+
